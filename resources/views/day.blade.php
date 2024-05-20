@@ -20,7 +20,7 @@
 
             {{-- Number of Day --}}
             <div class="flex items-center">
-                <p class="text-sm {{ $dayInMonth ? ' font-medium ' : '' }}">
+                <p class="text-sm text-gray-800 dark:text-gray-200 {{ $dayInMonth ? ' font-medium ' : '' }}">
                     {{ $day->format('j') }}
                 </p>
                 <p class="text-xs text-gray-600 dark:text-gray-400 ml-4">
