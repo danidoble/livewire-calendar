@@ -12,7 +12,7 @@
             {{$event['date']->format('G:i')}} - {{$event['end']->format('G:i')}}
         @endif
     </p>
-    <p class="mt-2 text-xs text-gray-200 dark:text-gray-800">
+    <p class="mt-2 text-xs text-gray-800 dark:text-gray-200">
         {{ $event['description'] ?? 'No description' }}
     </p>
 </div>
