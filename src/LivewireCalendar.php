@@ -263,6 +263,6 @@ class LivewireCalendar extends Component
      */
     public function scripts(): string
     {
-        return view('livewire-calendar::Components.scripts')->render();
+        return view('livewire-calendar::components.scripts')->render();
     }
 }
