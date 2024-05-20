@@ -3,6 +3,7 @@
 namespace Danidoble\LivewireCalendar;
 
 use Carbon\Carbon;
+use Carbon\CarbonInterface;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Support\Collection;
@@ -16,9 +17,9 @@ class LivewireCalendar extends Component
 
     public Carbon $endsAt;
 
-    public Carbon $gridStartsAt;
+    public Carbon|CarbonInterface $gridStartsAt;
 
-    public Carbon $gridEndsAt;
+    public Carbon|CarbonInterface $gridEndsAt;
 
     public ?int $weekStartsAt = null;
 
@@ -242,7 +243,7 @@ class LivewireCalendar extends Component
     /**
      * @throws Exception
      */
-    public function render(): Factory|View
+    public function render(): Factory|View|\Illuminate\Contracts\View\View
     {
         $events = $this->events();
 

@@ -75,7 +75,7 @@
             "@php vendor/bin/testbench serve"
         ],
         "lint": [
-            "@php vendor/bin/phpstan analyse"
+            "@php vendor/bin/phpstan analyse src tests --level=5"
         ],
         "configure": [
             "@php -f configure.php || echo 'configure.php not found. Skipping...'",
