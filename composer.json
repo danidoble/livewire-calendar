@@ -19,14 +19,14 @@
     ],
     "require": {
         "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0",
         "livewire/livewire": "^3.4"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
         "laravel/prompts": "^0.1.21",
         "orchestra/testbench": "^8.21|^v9.0.0",
-        "pestphp/pest": "^2.34",
-        "pestphp/pest-plugin-drift": "^2.6"
+        "pestphp/pest": "^2.34"
     },
     "autoload": {
         "psr-4": {
