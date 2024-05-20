@@ -1,0 +1,13 @@
+name: Update changelog
+
+on:
+    release:
+        types: [ released ]
+
+permissions: { }
+
+jobs:
+    update:
+        permissions:
+            contents: write
+        uses: danidoble/.github/.github/workflows/update-changelog.yml@main
